@@ -51,12 +51,6 @@
                         <a href="project.php">Projeto</a>
                     </li>
                     <li>
-                        <a href="voluntario.php">Seja um voluntário</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
                         <a href="#">PNE's</a>
                     </li>
                     <li>
@@ -88,40 +82,52 @@
                 </div>
                 <p class="lead">Portadores de Necessidades Especiais que participam do Pernas no Parque</p>
                 <div class="col-md-9">
+                  <div class="row carousel-holder">
 
-                    <div class="row carousel-holder">
+                          <div class="col-md-12"
+                              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                      <div class="item active">
+                                          <img class="slide-image" src="pne_img/anderson.png" alt="" width="100px">
+                                      </div>
+                                      <div class="item">
+                                          <img class="slide-image" src="pne_img/glauber.png" alt="">
+                                      </div>
+                                      <div class="item">
+                                          <img class="slide-image" src="pne_img/joaolucas.png" alt="">
+                                      </div>
+                                      <div class="item">
+                                          <img class="slide-image" src="pne_img/liviafirmino.png" alt="">
+                                      </div>
+                                      <div class="item">
+                                          <img class="slide-image" src="pne_img/pedrohenrique.png" alt="">
+                                      </div>
+                                  </div>
+                                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-left"></span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                      <span class="glyphicon glyphicon-chevron-right"></span>
+                                  </a>
+                              </div>
+                          </div>
 
-                        <div class="col-md-12">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img class="slide-image" src="images/banner1.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img class="slide-image" src="images/xan_joao.jpg" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img class="slide-image" src="images/voluntarios.jpg" alt="">
-                                    </div>
-                                </div>
-                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                      </div>
+
             </div>
         </div>
     </div>
     <!-- /.container -->
+
+
+
 
 
     <div class="container">

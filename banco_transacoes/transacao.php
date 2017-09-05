@@ -1,19 +1,20 @@
+
 <?php
 
 
 
-function conectar_banco(login,senha){
-  $host = "localhost";
-  $usuario = $_POST["login"];
-  $senha = $_POST["password"];
-  $db = "pdadb";
+fuction teste(){
+	echo "entrou";
+		$host = "localhost";
+		$usuario = 'login';
+		$senha = "";
+		$db = "pdadb";
 
-  $mysqli = mysqli_connect($host,$usuario,$senha,$db);
-  if($mysqli->connect_error){
-    echo "falha";
-  }else{
-    echo "success";
-  }
-
+		$mysqli = mysqli_connect ($host,$usuario,$senha,$db);
+	  if($mysqli){
+	    echo "entrou";
 }
+
+
+
 ?>

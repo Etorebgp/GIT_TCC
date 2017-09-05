@@ -1,3 +1,24 @@
+<?php
+	$host = "localhost";
+	$usuario = "root";
+	$senha = "";
+	$db = "pdadb";
+
+	$mysqli = mysqli_connect ($host,$usuario,$senha,$db);
+if ($mysqli){
+}
+
+$query = "SELECT * from usuarios";
+$stmt = mysql_query($query,$mysqli); //lembrando que aqui deve vir a sua conexão com o banco de dados
+echo "<table>";
+echo "<tr><td>Nome:</td><td>Cidade</td></tr><td>Cidade</td></tr><td>Cidade</td></tr>";
+while($resultado = mysql_fetch_array($stmt)){
+echo "<tr><td>".$resultado['Nome']."</td><td>".$resultado['Cidade']."</td></tr>";
+}
+echo "</table>";
+
+?>
+
 <!DOCTYPE php>
 <php lang="en">
 
@@ -48,9 +69,8 @@
                       <a href="noticias.php">Noticias</a>
                   </li>
                     <li>
-                        <a href="#">Projeto</a>
+                        <a href="project.php">Projeto</a>
                     </li>
-  
                     <li>
                         <a href="pnes.php">PNE's</a>
                     </li>
@@ -58,7 +78,7 @@
                         <a href="doacao.php">Doação</a>
                     </li>
                     <li>
-                        <a href="contact.php">Contato</a>
+                        <a href="#">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -72,33 +92,29 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="icons/pda.png">
-                <p class="lead">Principais informações</p>
+                <p class="lead">Pontuação PIV</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Pernas no Parque</a>
-                    <a href="#" class="list-group-item">Organizadores</a>
+                  <a href="#" class="list-group-item">Insira abaixo seu CPF para consultar sua pontuação atual <br/><input type "textarea"><br/> <input type="button" value="Consultar" onclick=""></a>
+
+
                 </div>
             </div>
 
             <div class="col-md-9">
-                <p class="lead">Pernas no Parque</p>
-                <div class="row">
-                  <p>O Projeto pernas no parque leva emoção aos domingos para pessoas com necessidades especiais
-                  que não tem condições de participar de corridas oficiais.
-
-                  </p>
-                    </div>
-
-
-                </div>
-
-                <p class="lead">Organizadores</p>
-                <p>O Projeto foi trazido para Campinas por João e Alexandra.</P>
-
-            </div>
+                <p class="lead">Classificação</p>
+                <table border="1">
+                  <tr>
+                  <td>linha 1, célula 1</td>
+                  <td>linha 1, célula 2</td>
+                  </tr>
+                  <tr>
+                  <td>linha 2, célula 1</td>
+                  <td>linha 2, célula 2</td>
+                  </tr>
+                  </table>
         </div>
     </div>
     <!-- /.container -->
-
     <div class="container">
 
         <hr>

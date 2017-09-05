@@ -51,12 +51,6 @@
                         <a href="project.php">Projeto</a>
                     </li>
                     <li>
-                        <a href="voluntario.php">Seja um voluntário</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
                         <a href="pnes.php">PNE's</a>
                     </li>
                     <li>
@@ -77,10 +71,23 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="icons/pda.png">
-                <p class="lead">Principais informações</p>
+                <p class="lead">Canais de comunicação</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Pernas no Parque</a>
-                    <a href="#" class="list-group-item">## </a>
+
+
+                    <div id="icons">
+
+                            <img src="icons/facebook.jpg" alt="">
+                            <p><a href="https://www.facebook.com/pernasdealuguelcampinas/">Facebook Pernas no Parque</a></p>
+
+                          <img src="icons/whatsapp.jpg" alt="">
+                          <p><a href="#">19 99924-8636</a></p>
+
+
+                          <img src="icons/instagram.png" alt="">
+                          <p><a href="https://www.instagram.com/pernasdealuguel/">Instagram Pernas no Parque</a></p>
+
+                    </div>
                 </div>
             </div>
 
@@ -92,66 +99,39 @@
                   </p>
                   <p class="lead">Redes Sociais</p>
                   <div class="row">
-                      <div class="col-sm-4 col-lg-4 col-md-4">
-                          <div class="thumbnail2">
-                              <img src="icons/facebook.jpg" alt="">
-                              <p><a href="https://www.facebook.com/pernasdealuguelcampinas/">Facebook Pernas no Parque</a></p>
-                          </div>
-                      </div>
 
-                      <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail2">
-                            <img src="icons/whatsapp.jpg" alt="">
-                            <p><a href="#">19 99924-8636</a></p>
-                        </div>
-                      </div>
-
-                      <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail2">
-                            <img src="icons/instagram.png" alt="">
-                            <p><a href="https://www.instagram.com/pernasdealuguel/">Instagram Pernas no Parque</a></p>
-                        </div>
-                      </div>
 
                   <div class="col-md-9">
                                     <form class="form-horizontal" role="form">
                                         <h2>Contato</h2>
-                                        <div class="form-group">
+
                                             <label for="firstName" class="col-sm-3 control-label">Nome</label>
                                             <div class="col-sm-9">
                                                 <input type="text" id="firstName" placeholder="Nome Completo" class="form-control" autofocus>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
+
+
                                             <label for="email" class="col-sm-3 control-label">Email</label>
                                             <div class="col-sm-9">
                                                 <input type="email" id="email" placeholder="Email" class="form-control">
-                                            </div>
+
                                         </div>
-                                        <div class="form-group">
+
                                             <label for="texto" class="col-sm-3 control-label">Mensagem</label>
                                             <div class="col-sm-9">
                                                 <input type="textarea" id="texto" placeholder="Texto" class="form-control">
                                             </div>
-                                        </div>
-                                        <div class="form-group">
+
+
                                             <div class="col-sm-9 col-sm-offset-3">
                                                 <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                                             </div>
-                                        </div>
+
                                     </form> <!-- /form -->
                   </div>
 
-                      <form class="form-horizontal" role="form">
-                        <p class="lead">Endereços</p>
-                        <div class="row">
-                          <p>
-
-                          </p>
-                      </form>
-                    </div>
-
+                      
 
                 </div>
             </div>

@@ -93,12 +93,6 @@
                         <a href="project.php">Projeto</a>
                     </li>
                     <li>
-                        <a href="voluntario.php">Seja um voluntário</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
                         <a href="pnes.php">PNE's</a>
                     </li>
                     <li>
@@ -106,6 +100,9 @@
                     </li>
                     <li>
                         <a href="contact.php">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="MostrarDivAcesso('formLogin')">Administração</a>
                     </li>
                 </ul>
             </div>
@@ -353,6 +350,27 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 </form>
+
+<form class="form-horizontal" role="form" id="formLogin"  style="display:none;position:absolute;top:25%;left:55%;margin-left:-150px;margin-top:-100px;padding:10px;width:600px;height:200px;border:1px solid #d0d0d0;" method="POST" action="banco_transacoes/transacao.php">
+    <div class="form-group">
+        <label for="login" class="col-sm-3 control-label">Login</label>
+        <div class="col-sm-9">
+            <input type="text" id="login" placeholder="Login" class="form-control" autofocus>
+        </div>
+        <label for="password" class="col-sm-3 control-label">Senha</label>
+        <div class="col-sm-9">
+            <input type="password" id="password" placeholder="Senha" class="form-control" >
+        </div>
+
+      <div class="col-sm-9 col-sm-offset-3">
+
+          <input type=submit class="btn btn-primary btn-block" value="Acessar" onclick="teste()">
+          <a href="#"><label for="esquecisenha">Esqueci minha Senha</label></a><br/>
+          <a href="#"><label for="cadastrar">Não Possuo Cadastro</label></a>
+        </div>
+    </div>
+</form>
+
 </body>
 
 </php>
