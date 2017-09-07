@@ -1,21 +1,20 @@
 <?php
 	$host = "localhost";
 	$usuario = "root";
-	$senha = "";
-	$db = "pdadb";
-
+	$senha = "root";
+	$db = "TCC";
 	$mysqli = mysqli_connect ($host,$usuario,$senha,$db);
-if ($mysqli){
-}
 
-$query = "SELECT * from usuarios";
-$stmt = mysql_query($query,$mysqli); //lembrando que aqui deve vir a sua conexão com o banco de dados
-echo "<table>";
-echo "<tr><td>Nome:</td><td>Cidade</td></tr><td>Cidade</td></tr><td>Cidade</td></tr>";
-while($resultado = mysql_fetch_array($stmt)){
-echo "<tr><td>".$resultado['Nome']."</td><td>".$resultado['Cidade']."</td></tr>";
-}
-echo "</table>";
+    $dados = $mysqli->query("SELECT nome, pontuacao FROM usuarios ORDER BY pontuacao DESC");
+    // transforma os dados em um array
+    $linha = mysqli_fetch_assoc($dados);
+    // calcula quantos dados retornaram
+    $total = mysqli_num_rows($dados);
+
+
+    if($mysqli->connect_errno)
+		echo "falha na conexão: (".$mysqli->connect_errno.")".
+		$mysqli->connect_error;
 
 ?>
 
@@ -48,7 +47,6 @@ echo "</table>";
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -102,14 +100,29 @@ echo "</table>";
 
             <div class="col-md-9">
                 <p class="lead">Classificação</p>
-                <table border="1">
+                <table border="1" name='pontuacao'>
                   <tr>
-                  <td>linha 1, célula 1</td>
-                  <td>linha 1, célula 2</td>
+                  <td> Nome Participante </td>
+                  <td> Pontuação Participante </td>
                   </tr>
                   <tr>
-                  <td>linha 2, célula 1</td>
-                  <td>linha 2, célula 2</td>
+    <?php
+	// se o número de resultados for maior que zero, mostra os dados
+	if($total > 0) {
+		// inicia o loop que vai mostrar todos os dados
+		do {
+    ?>
+                    <tr>
+			        <td><?=$linha['nome']?></td>
+                    <td><?=$linha['pontuacao']?></td>
+                    </tr>
+    <?php
+	// finaliza o loop que vai mostrar os dados
+	}while($linha = mysqli_fetch_assoc($dados));
+	// fim do if 
+	}
+    ?>
+
                   </tr>
                   </table>
         </div>
